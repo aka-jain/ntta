@@ -38,13 +38,17 @@
 
     $(window).on('hashchange', function() {
         if(window.location.hash == ''){
-            window.location.href = "";
+            $(".modal").fadeOut(300);
+        // window.location.hash = "";
+        $("body, html").css({
+            'overflow': 'auto'
+        })
         }
     });
 
     $(".cross").on('click', function() {
         $(".modal").fadeOut(300);
-        window.location.href = "";
+        window.location.hash = "";
         $("body, html").css({
             'overflow': 'auto'
         })
