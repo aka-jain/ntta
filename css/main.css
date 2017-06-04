@@ -64,6 +64,14 @@ a:hover {
     background-color: #fff;
 }
 
+#scroll{
+    cursor: pointer;
+    color: #9d9d9d;
+}
+#scroll:hover{
+    color: #f36f21;
+}
+
 .intro-logo img {
     width: 120px;
 }
